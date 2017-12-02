@@ -4,8 +4,8 @@ public class Utils
 {
 	// -----------------------------------------------------------------------------------------------------------------
 	/**
-	 * Сгенерировать RuntimeException(String message)
-	 * @param message - Описание ошибки
+	 * РЎРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ RuntimeException(String message)
+	 * @param message - РћРїРёСЃР°РЅРёРµ РѕС€РёР±РєРё
 	 */
 	public static void THROW( String message )
 	{
@@ -14,9 +14,9 @@ public class Utils
 
 	// -----------------------------------------------------------------------------------------------------------------
 	/**
-	 * Сгенерировать RuntimeException(String message) при невыполнении условия
-	 * @param expression - Условие
-	 * @param message - Описание ошибки
+	 * РЎРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ RuntimeException(String message) РїСЂРё РЅРµРІС‹РїРѕР»РЅРµРЅРёРё СѓСЃР»РѕРІРёСЏ
+	 * @param expression - РЈСЃР»РѕРІРёРµ
+	 * @param message - РћРїРёСЃР°РЅРёРµ РѕС€РёР±РєРё
 	 */
 	public static void MUST( boolean expression, String message )
 	{
