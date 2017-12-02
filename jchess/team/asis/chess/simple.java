@@ -1,7 +1,4 @@
-// $Id: $
-// Author: Anton Simonov
-
-package chess;
+package team.asis.chess;
 
 public class simple
 {
