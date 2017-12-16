@@ -1,4 +1,4 @@
-package team.asis.chess;
+﻿package team.asis.chess;
 
 public class Utils
 {

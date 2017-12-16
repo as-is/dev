@@ -1,10 +1,12 @@
-package team.asis.chess;
+﻿package team.asis.chess;
+
+import java.util.ArrayList;
 
 public class Figure
 {
 	private String color = "White"; // "White" "Black"
 	private String name = "Pawn"; // "King" "Queen" "Tower" "Officer" "Horse" "Pawn"
-	private String place = "e2"; // 'a'..'h' + '1'..'8'
+	private ArrayList<String> places = new ArrayList<>(); // 'a'..'h' + '1'..'8'
 
 	// -----------------------------------------------------------------------------------------------------------------
 	public Figure( String color, String name, String place )
@@ -16,7 +18,7 @@ public class Figure
 		this.name = name;
 
 		Utils.MUST( checkPlace( place ), "Place '" + place + "' is wrong" );
-		this.place = place;
+		places.add( place );
 	}
 
 	// -----------------------------------------------------------------------------------------------------------------
@@ -26,7 +28,19 @@ public class Figure
 	public String getName() { return name; }
 
 	// -----------------------------------------------------------------------------------------------------------------
-	public String getPlace() { return place; }
+	public ArrayList<String> getPlaces()
+	{
+		ArrayList<String> s = new ArrayList<>();
+		s.addAll( places );
+		return s;
+	}
+
+	// -----------------------------------------------------------------------------------------------------------------
+	public void move( String place )
+	{
+		Utils.MUST( checkPlace( place ), "Place '" + place + "' is wrong" );
+		places.add( place );
+	}
 
 	// -----------------------------------------------------------------------------------------------------------------
 	public boolean isAlly( Figure figure )
